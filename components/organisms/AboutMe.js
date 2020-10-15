@@ -15,7 +15,7 @@ const AboutMe = () => {
               <div
                 className="nardini"
                 role="img"
-                aria-labelledby="Foto do Bruno Nardini"
+                aria-label="Foto do Bruno Nardini"
               />
               <div className="hidden-image-preload" />
             </div>
@@ -40,6 +40,7 @@ const AboutMe = () => {
                   href="https://www.linkedin.com/in/brunonardini/"
                   target="_blank"
                   rel="nofollow"
+                  rel="noreferrer"
                 >
                   meu LinkedIn
                 </a>

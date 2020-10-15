@@ -13,7 +13,13 @@ export default function Button({ children, color, variant, href, ...rest }) {
   return (
     <>
       {href ? (
-        <a href={href} target="_blank" rel="nofollow" {...props}>
+        <a
+          href={href}
+          target="_blank"
+          rel="nofollow"
+          rel="noreferrer"
+          {...props}
+        >
           {children}
         </a>
       ) : (

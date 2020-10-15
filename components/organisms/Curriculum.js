@@ -67,6 +67,7 @@ const curriculum = [
           href="https://agilemanifesto.org/iso/ptbr/principles.html"
           target="_blank"
           rel="nofollow"
+          rel="noreferrer"
         >
           Manifesto Ágil
         </a>

@@ -32,6 +32,7 @@ export default function Footer() {
                     href="http://www.brunonardini.com.br/"
                     target="_blank"
                     rel="nofollow"
+                    rel="noreferrer"
                   >
                     Meu Blog
                   </a>
@@ -42,6 +43,7 @@ export default function Footer() {
                     href="http://www.brunonardini.com.br/fale-comigo"
                     target="_blank"
                     rel="nofollow"
+                    rel="noreferrer"
                   >
                     Fale Comigo
                   </a>
@@ -61,6 +63,7 @@ export default function Footer() {
                     href="https://twitter.com/nardiniacademy"
                     target="_blank"
                     rel="nofollow"
+                    rel="noreferrer"
                   >
                     Twitter
                   </a>
@@ -71,6 +74,7 @@ export default function Footer() {
                     href="https://www.youtube.com/channel/UCT6onqWIGlsQBXcF4btXOFg"
                     target="_blank"
                     rel="nofollow"
+                    rel="noreferrer"
                   >
                     Youtube
                   </a>
@@ -81,6 +85,7 @@ export default function Footer() {
                     href="https://www.linkedin.com/company/5317927"
                     target="_blank"
                     rel="nofollow"
+                    rel="noreferrer"
                   >
                     LinkedIn
                   </a>
@@ -91,6 +96,7 @@ export default function Footer() {
                     href="https://www.facebook.com/nardiniacademy"
                     target="_blank"
                     rel="nofollow"
+                    rel="noreferrer"
                   >
                     Facebook
                   </a>

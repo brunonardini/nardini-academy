@@ -9,6 +9,10 @@ export default function Layout({ children }) {
   return (
     <>
       <Head>
+        <meta
+          name="description"
+          content="Aprenda React e todo seu ecossistema com um projeto profissional do mundo real."
+        />
         <link rel="icon" href="/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap"

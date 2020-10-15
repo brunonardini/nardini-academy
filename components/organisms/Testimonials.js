@@ -88,7 +88,6 @@ export default function Testimonials() {
         .blockquote {
           position: relative;
           max-width: 620px;
-          margin: 80px auto;
           align-self: center;
         }
 
