@@ -2,11 +2,11 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 
-import Index from "./index";
+import About from "../pages/about";
 
-test("renders the course name", () => {
-  render(<Index />);
+test("renders the title", () => {
+  render(<About />);
   expect(
-    screen.getByText("React Profissional", { selector: "h1" })
+    screen.getByText("Nardini Academy", { selector: "h1" })
   ).toBeInTheDocument();
 });
