@@ -3,14 +3,16 @@ import React, { useContext } from "react";
 const themes = {
   dark: {
     colors: {
-      foreground: "#f2f2f2",
+      foreground: "#f8f8f2",
       background: "#282a36",
+      backgroundSecondary: "#22212c",
       primary: {
         main: "rgb(0, 188, 212)",
       },
       secondary: {
         main: "#50fa7b",
       },
+      divider: "#44475a",
     },
   },
 };

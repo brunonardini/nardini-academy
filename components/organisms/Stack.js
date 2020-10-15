@@ -1,7 +1,8 @@
 import React from "react";
 
-import { useTheme } from "../styles/Theme";
-import Container from "./Container";
+import { useTheme } from "../../styles/Theme";
+import Container from "../atoms/Container";
+import SectionTopic from "../atoms/SectionTopic";
 
 const stackList = [
   {
@@ -50,7 +51,7 @@ export default function Stack() {
     <>
       <div className="stacks">
         <Container>
-          <h3>Tecnologias utilizadas</h3>
+          <SectionTopic>Tecnologias utilizadas</SectionTopic>
           <div className="stack-list">
             {stackList.map((tech, index) => (
               <div className="tech" key={`tech-${index}`}>

@@ -1,7 +1,7 @@
 import React from "react";
 
-import { useTheme } from "../styles/Theme";
-import Container from "./Container";
+import { useTheme } from "../../styles/Theme";
+import Container from "../atoms/Container";
 
 export default function Summary() {
   const theme = useTheme();

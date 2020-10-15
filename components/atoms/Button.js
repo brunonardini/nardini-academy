@@ -1,19 +1,30 @@
 import React from "react";
 import clsx from "clsx";
 
-import { useTheme } from "../styles/Theme";
+import { useTheme } from "../../styles/Theme";
 
-export default function Button({ children, color, variant, ...rest }) {
+export default function Button({ children, color, variant, href, ...rest }) {
   const theme = useTheme();
+  const props = {
+    ...rest,
+    className: clsx("btn", variant, color),
+  };
 
   return (
     <>
-      <button type="button" className={clsx("btn", variant, color)} {...rest}>
-        {children}
-      </button>
+      {href ? (
+        <a href={href} target="_blank" rel="nofollow" {...props}>
+          {children}
+        </a>
+      ) : (
+        <button type="button" {...props}>
+          {children}
+        </button>
+      )}
 
       <style jsx>{`
         .btn {
+          display: inline-block;
           font-family: "Montserrat", sans-serif;
           font-weight: 400;
           font-size: 20px;
@@ -25,6 +36,7 @@ export default function Button({ children, color, variant, ...rest }) {
           border-radius: 36px;
           cursor: pointer;
           color: #212121;
+          text-decoration: none;
         }
 
         .primary {

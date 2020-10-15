@@ -1,8 +1,8 @@
 import React from "react";
 
-import Container from "./Container";
-import Button from "./Button";
-import Toolbar from "./Toolbar";
+import Container from "../atoms/Container";
+import Button from "../atoms/Button";
+import Toolbar from "../atoms/Toolbar";
 
 const Hero = () => (
   <>
@@ -26,7 +26,7 @@ const Hero = () => (
                     });
                   }}
                 >
-                  Saiba mais!!!!
+                  Saiba mais
                 </Button>
                 <Button color="secondary" variant="outlined">
                   Matricule-se
@@ -48,12 +48,14 @@ const Hero = () => (
       .hero {
         background-image: url("/images/hero.jpg");
         min-height: 100vh;
+        display: flex;
+        align-items: center;
       }
 
       .content {
+        padding-bottom: 40px;
         display: flex;
         align-items: center;
-        padding: 80px 0;
         color: #fff;
       }
 

@@ -61,6 +61,11 @@ export default function Layout({ children }) {
           line-height: 1.625;
           margin-bottom: 20px;
         }
+
+        a {
+          color: ${theme.colors.primary.main};
+          text-decoration: none;
+        }
       `}</style>
     </>
   );
