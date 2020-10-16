@@ -5,7 +5,7 @@ import { useTheme } from "../../styles/Theme";
 import Container from "../atoms/Container";
 import Button from "../atoms/Button";
 
-export default function Callout() {
+export default function Callout({ courseLink }) {
   const theme = useTheme();
 
   return (
@@ -17,7 +17,9 @@ export default function Callout() {
             Assista as primeiras aulas e veja como é o curso
           </p>
           <div>
-            <Button color="secondary">Começar</Button>
+            <Button color="secondary" href={courseLink}>
+              Começar
+            </Button>
           </div>
         </Container>
       </div>
