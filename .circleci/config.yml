@@ -1,7 +1,43 @@
 version: 2.1
 orbs:
-  node: circleci/node@3.0.0
+  node: circleci/node@4.0.0
+  codecov: codecov/codecov@1.1.1
+
+jobs:
+  tests:
+    docker:
+      - image: circleci/node:12.18.3-browsers
+    steps:
+      - checkout
+      - node/install-yarn
+      - run:
+          name: Show Node version
+          command: |
+            node --version
+            yarn --version
+      - node/install-packages:
+          pkg-manager: yarn
+      - run:
+          name: Run unit tests with coverage
+          command: yarn cover
+      - codecov/upload:
+          file: coverage/*.json
+  versioning:
+    docker:
+      - image: circleci/node:12.18.3
+    steps:
+      - checkout
+      - run:
+          name: Check package version
+          command: node scripts/check-version megatroom nardini-academy
+
 workflows:
-  node-tests:
+  ci:
     jobs:
-      - node/test
+      - tests
+      - versioning:
+          filters:
+            branches:
+              ignore: master
+            tags:
+              ignore: /.*/
