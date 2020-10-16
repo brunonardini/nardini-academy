@@ -13,11 +13,15 @@ export default function Layout({ children }) {
           name="description"
           content="Aprenda React e todo seu ecossistema com um projeto profissional do mundo real."
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#282a36" />
         <link rel="icon" href="/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap"
           rel="stylesheet"
         ></link>
+        <link rel="apple-touch-icon" href="/logo192.png" />
+        <link rel="manifest" href="/manifest.json" />
       </Head>
       {children}
       <style jsx global>{`
