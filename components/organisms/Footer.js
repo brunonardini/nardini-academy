@@ -138,6 +138,16 @@ export default function Footer() {
         .footer-link:hover {
           color: ${theme.colors.primary.main};
         }
+
+        @media (max-width: 767px) {
+          .footer {
+            text-align: center;
+          }
+
+          .grid {
+            grid-template-columns: 1fr;
+          }
+        }
       `}</style>
     </>
   );
