@@ -14,6 +14,7 @@ export default function AboutHeader() {
       </div>
       <style jsx>{`
         .header {
+          background-color: #1b292c;
           background-image: url("/images/34-1.jpg");
           background-position: center center;
           height: 100vh;

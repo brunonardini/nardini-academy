@@ -4,7 +4,7 @@ import Container from "../atoms/Container";
 import Button from "../atoms/Button";
 import Toolbar from "../atoms/Toolbar";
 
-const Hero = () => (
+const Hero = ({ courseLink }) => (
   <>
     <div className="hero">
       <Container>
@@ -28,7 +28,7 @@ const Hero = () => (
                 >
                   Saiba mais
                 </Button>
-                <Button color="secondary" variant="outlined">
+                <Button color="secondary" variant="outlined" href={courseLink}>
                   Matricule-se
                 </Button>
               </Toolbar>
