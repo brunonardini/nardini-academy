@@ -18,8 +18,10 @@ export default function Layout({ children }) {
         <link rel="icon" href="https://nardiniacademy.com/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap"
-          rel="stylesheet"
-        ></link>
+          rel="preload"
+          as="style"
+          onload="this.onload=null;this.rel='stylesheet'"
+        />
         <link
           rel="apple-touch-icon"
           href="https://nardiniacademy.com/logo192.png"
