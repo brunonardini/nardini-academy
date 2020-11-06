@@ -1,13 +1,16 @@
 import React from "react";
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 
 import Home from "../pages/index";
 
-test("renders the course name", () => {
+test("renders the course name", async () => {
   render(<Home />);
-  expect(
+
+  const title = await waitFor(() =>
     screen.getByText("React Profissional", { selector: "h1" })
-  ).toBeInTheDocument();
+  );
+
+  expect(title).toBeInTheDocument();
 });
 
 test("triggers call to action", () => {
