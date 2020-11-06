@@ -1,12 +1,28 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
-import "@testing-library/jest-dom/extend-expect";
+import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 
-import Index from "../pages/index";
+import Home from "../pages/index";
 
-test("renders the course name", () => {
-  render(<Index />);
-  expect(
+test("renders the course name", async () => {
+  render(<Home />);
+
+  const title = await waitFor(() =>
     screen.getByText("React Profissional", { selector: "h1" })
-  ).toBeInTheDocument();
+  );
+
+  expect(title).toBeInTheDocument();
+});
+
+test("triggers call to action", () => {
+  const scrollIntoView = jest.fn();
+  document.querySelector = jest.fn();
+  document.querySelector.mockReturnValue({
+    scrollIntoView,
+  });
+
+  render(<Home />);
+
+  fireEvent.click(screen.getByText("Saiba mais"));
+
+  expect(scrollIntoView).toHaveBeenCalledTimes(1);
 });

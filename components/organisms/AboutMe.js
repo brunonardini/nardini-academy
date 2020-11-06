@@ -17,7 +17,6 @@ const AboutMe = () => {
                 role="img"
                 aria-label="Foto do Bruno Nardini"
               />
-              <div className="hidden-image-preload" />
             </div>
             <div className="body">
               <h3>O Profissional</h3>
@@ -84,12 +83,7 @@ const AboutMe = () => {
         }
 
         .nardini:hover {
-          background-image: url("/images/nardini-black.jpg");
-        }
-
-        .hidden-image-preload {
-          background-image: url("/images/nardini-black.jpg");
-          display: none;
+          filter: grayscale(100%);
         }
 
         @media (max-width: 767px) {

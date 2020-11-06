@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import { useTheme } from "../../styles/Theme";
 
@@ -13,11 +14,15 @@ export default function Footer() {
       <footer className="footer">
         <Container>
           <div className="grid">
-            <div>
-              <img
-                src="/images/logo_200px_transp.png"
-                alt="Nardini Academy logo"
-              />
+            <div className="image-column">
+              <div className="image-container">
+                <Image
+                  src="/images/logo_200px_transp.png"
+                  alt="Nardini Academy logo"
+                  width={200}
+                  height={200}
+                />
+              </div>
             </div>
             <div>
               <ul className="list">
@@ -146,6 +151,14 @@ export default function Footer() {
 
           .grid {
             grid-template-columns: 1fr;
+          }
+
+          .image-column {
+            text-align: center;
+          }
+
+          .image-container {
+            display: inline-block;
           }
         }
       `}</style>

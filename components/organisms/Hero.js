@@ -3,6 +3,7 @@ import React from "react";
 import Container from "../atoms/Container";
 import Button from "../atoms/Button";
 import Toolbar from "../atoms/Toolbar";
+import Image from "next/image";
 
 const Hero = ({ courseLink }) => (
   <>
@@ -35,9 +36,11 @@ const Hero = ({ courseLink }) => (
             </div>
           </div>
           <div className="media">
-            <img
+            <Image
               src="/images/react-rocket-transp600.png"
               alt="React Profissional logo"
+              width={386}
+              height={386}
             />
           </div>
         </div>
@@ -74,11 +77,6 @@ const Hero = ({ courseLink }) => (
         padding-top: 16px;
       }
 
-      img {
-        width: 100%;
-        max-width: 480px;
-      }
-
       h1 {
         margin: 0;
         padding: 0;
@@ -113,6 +111,12 @@ const Hero = ({ courseLink }) => (
         h1 {
           font-size: 80px;
           line-height: 90px;
+        }
+      }
+
+      @media (max-width: 935px) {
+        .media {
+          display: none;
         }
       }
 

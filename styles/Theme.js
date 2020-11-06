@@ -17,7 +17,7 @@ const themes = {
   },
 };
 
-const ThemeContext = React.createContext(themes.dark);
+const ThemeContext = React.createContext();
 
 export const ThemeProvider = ({ children }) => (
   <ThemeContext.Provider value={themes.dark}>{children}</ThemeContext.Provider>
