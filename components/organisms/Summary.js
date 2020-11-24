@@ -19,11 +19,11 @@ export default function Summary() {
           </p>
           <p>
             Quando eu não sei algum conceito ou não conheço uma tecnologia, eu
-            procuro um profissional experiênte no assunto para absorver esse
+            procuro um profissional experiente no assunto para absorver esse
             conhecimento. Hoje em dia qualquer documentação já fornece de graça
             um tutorial com o passo a passo, então aprender como usar uma
-            linguagem, biblioteca ou framework dá para fazer sozinho sem custo,
-            mas a experiência de quem já aplicou em projetos reais e
+            linguagem, biblioteca ou framework dá para fazer sozinho(a) sem
+            custo, mas a experiência de quem já aplicou em projetos reais e
             profissionais você só consegue adquirir de alguém que já viveu isso.
           </p>
           <p>
