@@ -11,6 +11,7 @@ const Summary = dynamic(() => import("../components/organisms/Summary"));
 const Testimonials = dynamic(() =>
   import("../components/organisms/Testimonials")
 );
+const Projects = dynamic(() => import("../components/organisms/Projects"));
 const Footer = dynamic(() => import("../components/organisms/Footer"));
 const Callout = dynamic(() => import("../components/organisms/Callout"));
 
@@ -29,6 +30,7 @@ export default function Home() {
         <Curriculum />
         <AboutMe />
         <Testimonials />
+        <Projects />
         <Callout courseLink={UDEMY_LINK} />
         <Footer />
       </Layout>
