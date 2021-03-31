@@ -24,6 +24,11 @@ const items = [
     github: "https://github.com/Fabiana-BP/autoescola-fabiana",
   },
   {
+    student: { name: "Mauro Leandro dos Santos Neto" },
+    image: "/images/projects/bambu.5c490cc0.jpg",
+    link: "https://web-mauro-leandro.vercel.app/",
+  },
+  {
     student: { name: "Daniel Pericles Do Nascimento" },
     image: "/images/projects/hero.cce5ea9c.jpg",
     link: "https://autoescolanascimento-danielpernnasc.vercel.app/",
