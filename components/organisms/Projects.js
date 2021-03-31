@@ -23,6 +23,12 @@ const items = [
     link: "https://autoescola-fabiana.vercel.app/",
     github: "https://github.com/Fabiana-BP/autoescola-fabiana",
   },
+  {
+    student: { name: "Daniel Pericles Do Nascimento" },
+    image: "/images/projects/hero.cce5ea9c.jpg",
+    link: "https://autoescolanascimento-danielpernnasc.vercel.app/",
+    github: "https://github.com/Danielpernnasc/react-autoescolanascimento",
+  },
 ];
 
 export default function Projects() {
