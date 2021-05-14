@@ -8,14 +8,15 @@ import SectionTopic from "../atoms/SectionTopic";
 
 const items = [
   {
-    student: { name: "Caio" },
-    link: "https://autoescola-kaio.vercel.app/",
-    github: "",
+    student: { name: "Francisco Claudeilton Dantas" },
+    image: "/images/projects/hero_banner02.7aaef39a.jpg",
+    link: "https://smarteye.tec.br/",
+    chromatic: "https://609811fe1a29200039e3e7fa-ctrxenxpdl.chromatic.com/",
   },
   {
-    student: { name: "Augusto Scher" },
-    link: "https://react-profissional.vercel.app/",
-    github: "",
+    student: { name: "Caio" },
+    image: "/images/projects/bg-car.126726b4.jpg",
+    link: "https://autoescola-kaio.vercel.app/",
   },
   {
     student: { name: "Fabiana" },
