@@ -20,7 +20,7 @@ export default function Layout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap"
           rel="preload"
           as="style"
-          onload="this.onload=null;this.rel='stylesheet'"
+          onLoad="this.onload=null;this.rel='stylesheet'"
         />
         <link
           rel="apple-touch-icon"
