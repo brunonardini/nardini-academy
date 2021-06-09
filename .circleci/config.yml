@@ -29,7 +29,7 @@ jobs:
       - checkout
       - run:
           name: Check package version
-          command: node scripts/check-version megatroom nardini-academy
+          command: yarn check-my-package-version -o megatroom -p nardini-academy -b master
 
 workflows:
   ci:
