@@ -35,6 +35,11 @@ const items = [
     link: "https://autoescolanascimento-danielpernnasc.vercel.app/",
     github: "https://github.com/Danielpernnasc/react-autoescolanascimento",
   },
+  {
+    student: { name: "Arthur Valentim Kasper" },
+    image: "/images/projects/dino-01.33b771f6.jpg",
+    link: "https://3dino-academy.vercel.app/",
+  },
 ];
 
 export default function Projects() {
@@ -44,8 +49,10 @@ export default function Projects() {
     <>
       <Container>
         <div className="section">
-          <SectionTopic>Projeto dos alunos</SectionTopic>
-          <p>Projetos que os alunos fizeram durante o curso:</p>
+          <SectionTopic>Projetos dos alunos</SectionTopic>
+          <div className="description">
+            <p>Projetos que os alunos fizeram durante o curso:</p>
+          </div>
           <div className="projects">
             {items.map((project, index) => (
               <div key={index} className="project">
@@ -71,15 +78,17 @@ export default function Projects() {
                   >
                     Visitar
                   </a>
-                  <a
-                    href={project.github}
-                    className="action"
-                    target="_blank"
-                    rel="nofollow"
-                    rel="noreferrer"
-                  >
-                    GitHub
-                  </a>
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      className="action"
+                      target="_blank"
+                      rel="nofollow"
+                      rel="noreferrer"
+                    >
+                      GitHub
+                    </a>
+                  )}
                 </div>
               </div>
             ))}
@@ -89,13 +98,17 @@ export default function Projects() {
 
       <style jsx>{`
         .section {
-          padding: 80px 0;
+          padding: 0 0 120px 0;
+        }
+
+        .description {
+          padding-bottom: 16px;
         }
 
         .projects {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          grid-gap: 8px;
+          grid-gap: 16px;
         }
 
         .project {
@@ -116,12 +129,11 @@ export default function Projects() {
 
         .actions {
           display: flex;
+          padding: 0 16px 16px 16px;
         }
 
         .action {
           flex: 1;
-          border: 1px solid ${theme.colors.divider};
-          border-radius: 0 8px 0 8px;
         }
       `}</style>
     </>
