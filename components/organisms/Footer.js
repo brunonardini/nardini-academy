@@ -50,7 +50,7 @@ export default function Footer() {
                     rel="nofollow"
                     rel="noreferrer"
                   >
-                    Fale Comigo
+                    Fale comigo
                   </a>
                 </li>
                 <li>
