@@ -16,7 +16,8 @@ export default function AboutHeader() {
         .header {
           background-color: #1b292c;
           background-image: url("/images/34-1.jpg");
-          background-position: center center;
+          background-position: bottom center;
+          background-size: cover;
           height: 100vh;
           text-align: center;
           padding: 200px 0 120px;

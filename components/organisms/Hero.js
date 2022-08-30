@@ -50,6 +50,8 @@ const Hero = ({ courseLink }) => (
     <style jsx>{`
       .hero {
         background-image: url("/images/hero.jpg");
+        background-position: center;
+        background-size: cover;
         min-height: 100vh;
         display: flex;
         align-items: center;
