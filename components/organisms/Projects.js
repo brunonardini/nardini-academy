@@ -8,6 +8,11 @@ import SectionTopic from "../atoms/SectionTopic";
 
 const items = [
   {
+    student: { name: "Ana Paula Dezuo" },
+    image: "/images/projects/hero-ana-f37ecd.jpg",
+    link: "https://aquarela.vercel.app/",
+  },
+  {
     student: { name: "Francisco Claudeilton Dantas" },
     image: "/images/projects/hero_banner02.7aaef39a.jpg",
     link: "https://smarteye.tec.br/",
