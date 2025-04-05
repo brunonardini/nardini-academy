@@ -27,70 +27,11 @@ export default function Footer() {
             <div>
               <ul className="list">
                 <li>
-                  <Link href="/">
-                    <a className="footer-link">React Profissional</a>
-                  </Link>
-                </li>
-                <li>
                   <a
                     className="footer-link"
-                    href="http://www.brunonardini.com.br/"
+                    href="https://www.linkedin.com/in/brunonardini/"
                     target="_blank"
-                    rel="nofollow"
-                    rel="noreferrer"
-                  >
-                    Meu Blog
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="footer-link"
-                    href="http://www.brunonardini.com.br/fale-comigo"
-                    target="_blank"
-                    rel="nofollow"
-                    rel="noreferrer"
-                  >
-                    Fale Comigo
-                  </a>
-                </li>
-                <li>
-                  <Link href="/about">
-                    <a className="footer-link">Sobre Nardini Academy</a>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <ul className="list">
-                <li>
-                  <a
-                    className="footer-link"
-                    href="https://twitter.com/nardiniacademy"
-                    target="_blank"
-                    rel="nofollow"
-                    rel="noreferrer"
-                  >
-                    Twitter
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="footer-link"
-                    href="https://www.youtube.com/channel/UCT6onqWIGlsQBXcF4btXOFg"
-                    target="_blank"
-                    rel="nofollow"
-                    rel="noreferrer"
-                  >
-                    Youtube
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="footer-link"
-                    href="https://www.linkedin.com/company/5317927"
-                    target="_blank"
-                    rel="nofollow"
-                    rel="noreferrer"
+                    rel="noreferrer noopener"
                   >
                     LinkedIn
                   </a>
@@ -98,12 +39,31 @@ export default function Footer() {
                 <li>
                   <a
                     className="footer-link"
-                    href="https://www.facebook.com/nardiniacademy"
+                    href="https://x.com/BrunoNardini"
                     target="_blank"
-                    rel="nofollow"
-                    rel="noreferrer"
+                    rel="noreferrer noopener"
                   >
-                    Facebook
+                    X (Twitter)
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="footer-link"
+                    href="https://www.instagram.com/bruno.nardini.dev/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="footer-link"
+                    href="https://github.com/brunonardini"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    GitHub
                   </a>
                 </li>
               </ul>
@@ -115,15 +75,14 @@ export default function Footer() {
         .footer {
           background-color: #181828;
           border-top: 1px solid #313646;
-          padding: 120px 0 80px;
+          padding: 80px 0;
         }
 
         .grid {
           display: grid;
-          grid-column-gap: 16px;
-          grid-row-gap: 16px;
-          grid-template-columns: 1fr;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: 1fr 1fr;
+          gap: 40px;
+          align-items: center;
         }
 
         .list {
@@ -138,27 +97,26 @@ export default function Footer() {
         .footer-link {
           color: ${theme.colors.foreground};
           font-size: 1.2rem;
+          text-decoration: none;
         }
 
         .footer-link:hover {
           color: ${theme.colors.primary.main};
         }
 
-        @media (max-width: 767px) {
-          .footer {
-            text-align: center;
-          }
+        .image-container {
+          display: flex;
+          justify-content: center;
+        }
 
+        @media (max-width: 767px) {
           .grid {
             grid-template-columns: 1fr;
-          }
-
-          .image-column {
             text-align: center;
           }
 
-          .image-container {
-            display: inline-block;
+          .list {
+            margin-top: 40px;
           }
         }
       `}</style>

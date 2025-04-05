@@ -3,45 +3,45 @@ import React from "react";
 import Container from "../atoms/Container";
 import Button from "../atoms/Button";
 import Toolbar from "../atoms/Toolbar";
-import Image from "next/image";
 
-const Hero = ({ courseLink }) => (
+const Hero = () => (
   <>
     <div className="hero">
       <Container>
         <div className="content">
           <div className="body">
             <span className="nardini-academy">Nardini Academy</span>
-            <h1>React Profissional</h1>
+            <h1>Uma História de Aprendizado e Crescimento</h1>
             <h2>
-              Aprenda React e todo seu ecossistema com um projeto profissional
-              do mundo real.
+              Foi um prazer imenso ter compartilhado conhecimento e ajudado
+              tantos alunos em suas jornadas profissionais. Cada curso
+              ministrado foi uma oportunidade de transformar vidas e carreiras
+              através do desenvolvimento web.
             </h2>
+            <p className="follow-message">
+              Atualmente estou me dedicando a novos projetos e desafios.
+              Acompanhe minha jornada através das redes:
+            </p>
             <div className="actions">
               <Toolbar>
                 <Button
+                  color="secondary"
                   variant="outlined"
-                  onClick={() => {
-                    document.querySelector("#summary").scrollIntoView({
-                      behavior: "smooth",
-                    });
-                  }}
+                  href="https://brunonardini.com.br/"
                 >
-                  Saiba mais
+                  Blog
                 </Button>
-                <Button color="secondary" variant="outlined" href={courseLink}>
-                  Matricule-se
+                <Button
+                  variant="outlined"
+                  href="https://www.linkedin.com/in/brunonardini/"
+                >
+                  LinkedIn
+                </Button>
+                <Button variant="outlined" href="https://x.com/BrunoNardini">
+                  Twitter
                 </Button>
               </Toolbar>
             </div>
-          </div>
-          <div className="media">
-            <Image
-              src="/images/react-rocket-transp600.png"
-              alt="React Profissional logo"
-              width={386}
-              height={386}
-            />
           </div>
         </div>
       </Container>
@@ -79,17 +79,25 @@ const Hero = ({ courseLink }) => (
         padding-top: 16px;
       }
 
+      .follow-message {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 200;
+        opacity: 0.9;
+      }
+
       h1 {
         margin: 0;
         padding: 0;
         font-weight: 700;
-        font-size: 100px;
-        line-height: 100px;
+        font-size: 60px;
+        line-height: 70px;
       }
 
       h2 {
         font-size: 20px;
         font-weight: 200;
+        max-width: 800px;
       }
 
       @media (max-width: 1000px) {
@@ -99,8 +107,8 @@ const Hero = ({ courseLink }) => (
         }
 
         h1 {
-          font-size: 10vw;
-          line-height: 10vw;
+          font-size: 8vw;
+          line-height: 9vw;
         }
       }
 
@@ -111,14 +119,8 @@ const Hero = ({ courseLink }) => (
         }
 
         h1 {
-          font-size: 80px;
-          line-height: 90px;
-        }
-      }
-
-      @media (max-width: 935px) {
-        .media {
-          display: none;
+          font-size: 50px;
+          line-height: 60px;
         }
       }
 
@@ -129,8 +131,8 @@ const Hero = ({ courseLink }) => (
         }
 
         h1 {
-          font-size: 50px;
-          line-height: 60px;
+          font-size: 40px;
+          line-height: 50px;
         }
       }
     `}</style>
