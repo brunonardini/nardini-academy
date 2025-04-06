@@ -6,6 +6,6 @@ import About from "../pages/about";
 test("renders the title", () => {
   render(<About />);
   expect(
-    screen.getByText("Nardini Academy", { selector: "h1" })
+    screen.getByText("Nardini Academy", { selector: "h1" }),
   ).toBeInTheDocument();
 });

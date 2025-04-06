@@ -7,7 +7,7 @@ test("renders the course name", async () => {
   render(<Home />);
 
   const title = await waitFor(() =>
-    screen.getByText("React Profissional", { selector: "h1" })
+    screen.getByText("React Profissional", { selector: "h1" }),
   );
 
   expect(title).toBeInTheDocument();
