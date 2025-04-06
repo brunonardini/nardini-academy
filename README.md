@@ -4,3 +4,15 @@
 ![Codecov](https://img.shields.io/codecov/c/github/megatroom/nardini-academy)
 
 Go to site: [https://nardiniacademy.com/](https://nardiniacademy.com/)
+
+## Available Scripts
+
+This project uses the following yarn commands:
+
+- `yarn dev` - Starts the Next.js development server
+- `yarn build` - Builds the project for production
+- `yarn start` - Starts the Next.js server in production mode
+- `yarn storybook` - Starts Storybook in development mode on port 6006
+- `yarn build-storybook` - Builds Storybook for production
+- `yarn test` - Runs tests with Jest in watch mode with code coverage
+- `yarn cover` - Runs tests with Jest and generates code coverage report
