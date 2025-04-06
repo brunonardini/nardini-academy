@@ -1,28 +1,40 @@
-import React from "react";
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 
 import Home from "../pages/index";
 
-test("renders the course name", async () => {
+test("renders the title", async () => {
   render(<Home />);
 
   const title = await waitFor(() =>
-    screen.getByText("React Profissional", { selector: "h1" }),
+    screen.getByText("Uma História de Aprendizado e Crescimento", {
+      selector: "h1",
+    })
   );
 
   expect(title).toBeInTheDocument();
 });
 
-test("triggers call to action", () => {
-  const scrollIntoView = jest.fn();
-  document.querySelector = jest.fn();
-  document.querySelector.mockReturnValue({
-    scrollIntoView,
-  });
-
+test("renders the Nardini Academy text", async () => {
   render(<Home />);
 
-  fireEvent.click(screen.getByText("Saiba mais"));
+  const academyText = await waitFor(() =>
+    screen.getByText("Nardini Academy", { selector: "span" })
+  );
 
-  expect(scrollIntoView).toHaveBeenCalledTimes(1);
+  expect(academyText).toBeInTheDocument();
+});
+
+test("renders social media buttons in hero section", async () => {
+  render(<Home />);
+
+  const heroSection = screen.getByTestId("hero-section");
+  const blogButton = await waitFor(() => screen.getByText("Blog"));
+  const linkedinButton = await waitFor(() =>
+    screen.getByTestId("hero-linkedin-button")
+  );
+  const twitterButton = await waitFor(() => screen.getByText("Twitter"));
+
+  expect(blogButton).toBeInTheDocument();
+  expect(linkedinButton).toBeInTheDocument();
+  expect(twitterButton).toBeInTheDocument();
 });
