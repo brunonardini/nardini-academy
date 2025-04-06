@@ -8,33 +8,27 @@ import SectionTopic from "../atoms/SectionTopic";
 const items = [
   {
     name: "Fernando Skate",
-    text:
-      "Estou gostando bastante do curso, é tudo o que eu preciso para aprender React. Aqui neste curso estou adquirindo o conhecimento passo a passo nos mínimos detalhes. Obrigado ao professor!",
+    text: "Estou gostando bastante do curso, é tudo o que eu preciso para aprender React. Aqui neste curso estou adquirindo o conhecimento passo a passo nos mínimos detalhes. Obrigado ao professor!",
   },
   {
     name: "Dário Teodoro",
-    text:
-      "Ótimo conteúdo, Vejo uma grande preocupação em mate-lo sempre atualizado, com inclusão de novos módulos. O Instrutor é muito atencioso no esclarecimento de dúvidas.",
+    text: "Ótimo conteúdo, Vejo uma grande preocupação em mate-lo sempre atualizado, com inclusão de novos módulos. O Instrutor é muito atencioso no esclarecimento de dúvidas.",
   },
   {
     name: "Julio Cezar Dourado",
-    text:
-      "Professor conhece demais! Explica detalhadamente cada passo, valeu cada centavo do investimento.",
+    text: "Professor conhece demais! Explica detalhadamente cada passo, valeu cada centavo do investimento.",
   },
   {
     name: "Fabiana Barreto Pereira",
-    text:
-      "Muito Bom! Instrutor passa o conteúdo de forma bem simples e fácil entendimento.",
+    text: "Muito Bom! Instrutor passa o conteúdo de forma bem simples e fácil entendimento.",
   },
   {
     name: "Kaio Felipe Silva",
-    text:
-      'Antes desse curso já tinha tido contato com React, porém quando pegava um "projeto da vida real" sofria muito pra entender o que tava acontecendo. Depois de iniciar (e ainda não terminei) já finalizei dois projetos e vejo que o curso teve um papel crucial nisso (visto que eu já tinha feito outros anteriormente). Recomendo demais! Daria 6 estrelas, se possível hahah!',
+    text: 'Antes desse curso já tinha tido contato com React, porém quando pegava um "projeto da vida real" sofria muito pra entender o que tava acontecendo. Depois de iniciar (e ainda não terminei) já finalizei dois projetos e vejo que o curso teve um papel crucial nisso (visto que eu já tinha feito outros anteriormente). Recomendo demais! Daria 6 estrelas, se possível hahah!',
   },
   {
     name: "Wilson Aparecido da Silva Pereira",
-    text:
-      "O Curso foi muito produtivo no meu aprendizado e consegui alinhar boas praticas no meu desenvolvimento - Valeu por ter dedicado com certezas dias de trabalho para promover esse trabalho que vai ajudar muita gente a crescer profissionalmente.",
+    text: "O Curso foi muito produtivo no meu aprendizado e consegui alinhar boas praticas no meu desenvolvimento - Valeu por ter dedicado com certezas dias de trabalho para promover esse trabalho que vai ajudar muita gente a crescer profissionalmente.",
   },
 ];
 

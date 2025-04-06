@@ -8,8 +8,10 @@
     "start": "next start",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test": "jest --coverage --watch",
-    "cover": "jest --coverage"
+    "test": "jest --watch",
+    "cover": "jest --coverage",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write ."
   },
   "dependencies": {
     "clsx": "2.1.1",
