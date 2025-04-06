@@ -24,7 +24,7 @@ const items = [
   },
   {
     name: "Kaio Felipe Silva",
-    text: 'Antes desse curso já tinha tido contato com React, porém quando pegava um "projeto da vida real" sofria muito pra entender o que tava acontecendo. Depois de iniciar (e ainda não terminei) já finalizei dois projetos e vejo que o curso teve um papel crucial nisso (visto que eu já tinha feito outros anteriormente). Recomendo demais! Daria 6 estrelas, se possível hahah!',
+    text: "Antes desse curso já tinha tido contato com React, porém quando pegava um &quot;projeto da vida real&quot; sofria muito pra entender o que tava acontecendo. Depois de iniciar (e ainda não terminei) já finalizei dois projetos e vejo que o curso teve um papel crucial nisso (visto que eu já tinha feito outros anteriormente). Recomendo demais! Daria 6 estrelas, se possível hahah!",
   },
   {
     name: "Wilson Aparecido da Silva Pereira",
@@ -45,7 +45,7 @@ export default function Testimonials() {
             {items.map((item, index) => (
               <div key={index} className="blockquote">
                 <p className="blockquote-text">
-                  <em>"{item.text}"</em>
+                  <em>&ldquo;{item.text}&rdquo;</em>
                 </p>
                 <p className="student">&mdash; {item.name}</p>
               </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 import { useTheme } from "../../styles/Theme";
 import Container from "../atoms/Container";
@@ -56,8 +57,11 @@ export default function Stack() {
             {stackList.map((tech, index) => (
               <div className="tech" key={`tech-${index}`}>
                 <div>
-                  <img
+                  <Image
                     src={`/images/stack/${tech.image}`}
+                    alt={`Logo ${tech.name}`}
+                    width={120}
+                    height={120}
                     className="tech-img"
                   />
                 </div>
@@ -90,6 +94,8 @@ export default function Stack() {
           border: 3px solid #192035;
           border-radius: 32px;
           width: 120px;
+          height: 120px;
+          object-fit: contain;
         }
 
         h4 {

@@ -38,8 +38,7 @@ const AboutMe = () => {
                 <a
                   href="https://www.linkedin.com/in/brunonardini/"
                   target="_blank"
-                  rel="nofollow"
-                  rel="noreferrer"
+                  rel="nofollow noreferrer"
                 >
                   meu LinkedIn
                 </a>
