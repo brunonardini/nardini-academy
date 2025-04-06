@@ -3,10 +3,12 @@ import React from "react";
 import Button from "./Button";
 import Toolbar from "./Toolbar";
 
-export default {
+const meta = {
   title: "Components/Button",
   component: Button,
 };
+
+export default meta;
 
 export const usage = () => (
   <div>

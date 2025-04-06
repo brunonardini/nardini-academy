@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 import { useTheme } from "../../styles/Theme";
 
@@ -14,9 +15,11 @@ export default function Institutional() {
         <Container>
           <div className="grid">
             <div>
-              <img
+              <Image
                 alt="Figura do Bruno Nardini na frente do computador com uma xícara de café ao lado"
                 src="/images/namission.png"
+                width={400}
+                height={400}
                 className="image"
               />
             </div>

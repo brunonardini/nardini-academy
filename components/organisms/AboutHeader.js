@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 import { useTheme } from "../../styles/Theme";
 
@@ -8,7 +9,12 @@ export default function AboutHeader() {
   return (
     <>
       <div className="header">
-        <img src="/images/logo_200px_transp.png" alt="Nardini Academy logo" />
+        <Image
+          src="/images/logo_200px_transp.png"
+          alt="Nardini Academy logo"
+          width={200}
+          height={200}
+        />
         <h1 className="title">Nardini Academy</h1>
         <h2>Hoje melhor que ontem, amanhã melhor que hoje</h2>
       </div>

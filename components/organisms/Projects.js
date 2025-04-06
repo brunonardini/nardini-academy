@@ -67,6 +67,7 @@ export default function Projects() {
                       src={project.image}
                       layout="fill"
                       objectFit="cover"
+                      alt={`Projeto de ${project.student.name}`}
                     />
                   </div>
                 )}
@@ -78,8 +79,7 @@ export default function Projects() {
                     href={project.link}
                     className="action"
                     target="_blank"
-                    rel="nofollow"
-                    rel="noreferrer"
+                    rel="nofollow noreferrer"
                   >
                     Visitar
                   </a>
@@ -88,8 +88,7 @@ export default function Projects() {
                       href={project.github}
                       className="action"
                       target="_blank"
-                      rel="nofollow"
-                      rel="noreferrer"
+                      rel="nofollow noreferrer"
                     >
                       GitHub
                     </a>

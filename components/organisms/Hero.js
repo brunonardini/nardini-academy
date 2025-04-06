@@ -6,7 +6,7 @@ import Toolbar from "../atoms/Toolbar";
 
 const Hero = () => (
   <>
-    <div className="hero">
+    <div className="hero" data-testid="hero-section">
       <Container>
         <div className="content">
           <div className="body">
@@ -34,6 +34,7 @@ const Hero = () => (
                 <Button
                   variant="outlined"
                   href="https://www.linkedin.com/in/brunonardini/"
+                  data-testid="hero-linkedin-button"
                 >
                   LinkedIn
                 </Button>

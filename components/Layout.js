@@ -17,12 +17,6 @@ export default function Layout({ children }) {
         <meta name="theme-color" content="#282a36" />
         <link rel="icon" href="https://nardiniacademy.com/favicon.ico" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap"
-          rel="preload"
-          as="style"
-          onLoad="this.onload=null;this.rel='stylesheet'"
-        />
-        <link
           rel="apple-touch-icon"
           href="https://nardiniacademy.com/logo192.png"
         />
